@@ -1,0 +1,426 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width:100%;
+    position: relative;
+
+}
+
+/* ESTILOS PARA EL MENU */
+.header-container{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #8d8b8b;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+}
+.title{
+    font-weight: bold;
+}
+#parati{
+    font-weight:900;
+    font-size: 20px;
+    color: rgb(254,44,85);
+    
+}
+#siguiendo{
+    
+    font-size: 20px;
+    
+}
+#casa{
+    color: rgb(254,44,85);
+    font-size: 25px;
+    
+}
+#seguir{
+    font-size: 25px;
+
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    line-height: 60px;
+    font-size: 26px;
+
+} 
+.btn-login-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    justify-content: space-between;
+}
+.btn-upload{
+    width: 30%;
+    cursor: pointer;
+
+}
+
+.btn-login{
+    width: 65%;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-login button{
+    width: 100%;
+    background-color: rgb(226, 94, 94);
+    padding: 10px 15px;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-login button:hover{
+    background-color: rgb(80, 12, 0);
+    
+}
+/* FIN DE MENU */
+
+/* SECCION 1  */
+.section-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    
+}
+
+.sec-1-container{
+    width: 18%;
+    height: 100vh;
+    padding: 20px;
+    
+     
+     /* background-color: white;
+     width: 18%;
+     padding: 3%;
+     */
+}
+
+.btn-foryou-container{
+    width: 100%;
+    display: block;
+    
+}
+
+.btn-foryou-container .btn{
+    width: 100%;
+}
+
+.btn-foryou-container .btn button{
+    width: 100%;
+    height: 45px;
+    border: 0px;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer ;
+} 
+
+.btn-foryou-container .btn button i{
+    width: 30%;
+    float: left;
+}
+
+.btn-foryou-container .btn small{
+    float: left;
+}
+.btn-foryou-container .btn:hover{
+    background-color: rgba(111, 104, 104, 0.09);
+}
+
+
+.iniciar-container{
+    margin-top: 40px;
+    width: 100%;
+    font-size: 18px;
+}
+.iniciar-container .iniciar small{
+    opacity: .5;
+}
+.iniciar-container .iniciar button{
+    width: 80%;
+    height: 45px;
+    background-color: transparent;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid rgb(226, 94, 94);
+    font-size: 18px;
+    color: rgb(226, 94, 94);
+    font-weight: bold;
+}
+
+.form-container{
+    margin-top: 40px;
+    width: 100%;
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+.form-container .option{
+    width: 80%;
+    height: 45px;
+    margin-top: 15px;
+}
+
+/* FIN */
+
+
+/* SECCION 2  */
+.sec-2-container{
+    width: 50%;
+    justify-content: center;
+    /* background-color: brown; */
+}
+
+.info-user .name p{
+    font-weight:900;
+}
+.video-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 500px 50px;
+    grid-template-areas: "info-user-container" "user-video" "option";
+
+}
+.info-user-container{
+    grid-area: info-user-container;
+    display: grid;
+    grid-template-columns: 10% 50% 20%;
+    grid-template-rows: 100px;
+    ;
+
+
+}
+
+.img-profile{
+    grid-row:1/2;
+    grid-column: 1/2;
+
+
+}   
+.img-profile img{
+    width: 50%;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 30px;
+
+
+} 
+.info-user{
+    grid-row:1/2;
+    grid-column: 2/3;
+    margin-top: 10px;
+    /* background-color: blueviolet; */
+
+}
+.follow-container{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    /* background-color: rgb(99, 106, 190); */
+   
+}
+
+.user-video{
+    grid-area: user-video;
+    border-radius: 10px
+
+}
+/* .options{
+    grid-area: options;
+} */
+
+.btn-follow{
+    width: 80%;
+    height: 45px;
+    background-color: transparent;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid rgb(226, 94, 94);
+    font-size: 18px;
+    color: rgb(226, 94, 94);
+    font-weight: bold;
+    float: right;
+}
+
+.user-video{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    /* margin:auto; */
+    overflow: hidden;
+    margin-left: 10%;
+}
+.user-video video{
+    width: 100%;
+
+
+}
+.options{
+    width: 80%;
+    height: 60px;
+    margin-left: 10%;
+}
+
+.options i{
+    position: relative;
+    width: 16%;
+    font-size: 24px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/* FIN */
+
+/* SECCION 3  */
+
+.sec-3-container{
+    width: 25%;
+    /* background-color: aqua; */
+}
+
+.sec-3{
+    padding: 40px;
+}
+.social-networks-container{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+.social-networks-container i{
+    cursor: pointer;
+
+}
+
+/* FIN */
+
+/* Trabajar con estilos de cuentas recomendadas */
+.accounts-container{
+    margin-top: 20px;
+    border: 2px solid rgb(0, 0, 0, 0.233);
+    overflow:auto;
+    height: 350px;
+
+}
+
+.text-recommended{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.account-recommended{
+    width: 93%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.account-img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow:hidden;
+     
+}
+.account-img img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
+}
+
+.account-username{
+    /* line-height: 20px; */
+    width: 100px;
+}
+
+.btn-account button{
+    width: 90px;
+    height: 30px;
+    background-color: transparent;
+    margin-top: 8px;
+    cursor: pointer;
+    border: 2px solid rgb(226, 94, 94);
+    font-size: 14px;
+    color: rgb(226, 94, 94);
+    font-weight: bold;
+    float: right;
+}
+.bars{
+    display: none;
+
+}
+
+.up{
+    width:50px ;
+    height: 50px;
+    border-radius: 50%;
+    background-color: brown;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    top: 90%;
+    right: 2%;
+}
+
+.up i{
+    color: white;
+    font-size: 40px;
+    line-height: 50px;
+
+}
+
+/* FIN */
+
+/* RESPONSIVE DESING */
+@media(max-width: 1130px){
+    .sec-3-container {
+        display: none;
+    }
+    .btn-login-container{
+        width: 40%;
+    }
+    .sec-2-container{
+        width: 70%;
+    }
+}
+@media(max-width:700px){
+    .sec-1-container{
+        display: none;
+        background-color: white;
+        width: 45%;
+        padding: 3%;
+        position: fixed;
+        z-index: 90;
+        height: 100%;
+
+    }
+    .sec-2-container{
+        width: 90%;
+        margin: auto;
+
+    }
+    .op{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+    .title{
+        margin-left: 10px ;
+    }
+    .btn-login-container{
+        width: 75%;
+    }
+}
